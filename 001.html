@@ -1,0 +1,154 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8">
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>TITLE</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="manifest" href="site.webmanifest">
+	<link rel="apple-touch-icon" href="i/icon.png">
+	<!-- Place favicon.ico in the root directory -->
+	<link rel="shortcut icon" href="i/favicon.ico" />
+	<!-- 60x60//-->
+	<!-- https://msdn.microsoft.com/en-us/library/dn455106(v=vs.85).aspx -->
+	<meta name="msapplication-config" content="tile.xml" />
+	<meta name="application-name" content="tiletext" />
+	<link href="001.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="001.js"></script>
+	<style>
+	:root {
+		--jpbs2021-gap: 1em;
+	}
+	.jpbs2021-grid-container {
+		display: grid;
+		/*grid-auto-columns: minmax(200px, auto);*/
+		grid-template-columns: repeat(auto-fill, minmax(calc(200px - var(--jpbs2021-gap) * 2), 1fr));
+		grid-gap: var(--jpbs2021-gap);
+		/*place-items: center stretch;*/
+		justify-content: center;
+		/*justify-items: center;*/
+		/*place-items: center;*/
+	}
+	.jpbs2021-grid-container > figure, .jpbs2021-grid-img {
+		background: #00000033;
+		border: 3px solid #333;
+		padding: var(--jpbs2021-gap);
+		text-align: center;
+	}
+	.jpbs2021-grid-container a, .jpbs2021-grid-container img {
+		display: block;
+		/* to make display:block behave as epected in this context */
+		height: 100%;
+	}
+	.jpbs2021-grid-container img {
+		margin: 0 auto;
+		width: auto;
+		max-width: 100%;
+		height: auto;
+		max-height: 200px;
+	}
+	/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+	.jpbs2021-flex-container {
+		display: flex;
+		flex-wrap: wrap;
+		gap: var(--jpbs2021-gap);
+		justify-content: center;
+	}
+	.jpbs2021-flex-container > figure, .jpbs2021-flex-img {
+		display: flex;
+		max-width: calc(200px - var(--jpbs2021-gap) * 2);
+		background: #00000033;
+		border: 3px solid #333;
+		padding: var(--jpbs2021-gap);
+		text-align: center;
+	}
+	.jpbs2021-flex-container a, .jpbs2021-flex-container img {
+		display: block;
+	}
+	.jpbs2021-flex-container img {
+		margin: 0 auto;
+		width: auto;
+		max-width: 100%;
+		height: auto;
+		max-height: 200px;
+	}
+	</style>
+</head>
+<body>
+	<!--[if lte IE 9]> <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p> <![endif]-->
+	<div id="vs_content">
+		<div class="onecolx">
+			<p>grid card links</p>
+			<div class="jpbs2021-grid-container">
+				<figure class="jpbs2021-grid-img">
+					<a href="xxx"><img alt="alttext" src="https://placekitten.com/150/200" width="150" height="200" />
+						<figcaption>Archimedes Thoughtful</figcaption>
+					</a>
+				</figure>
+				<div class="jpbs2021-grid-img">long content long content long content long content long content Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, earum labore laudantium quia unde, neque, maxime odit eum itaque ipsam accusamus
+					<!-- possimus alias sed reiciendis tenetur debitis consectetur numquam placeat. Numquam eius similique veritatis temporibus exercitationem, iure? Tempora et assumenda amet quae iure laudantium alias porro nulla, corporis reprehenderit facere quia blanditiis laborum fugiat in autem possimus ex quasi veritatis ratione corrupti eligendi consequatur, odit numquam? Accusantium consectetur eius at cupiditate culpa nobis quas cumque labore optio nesciunt omnis ipsam natus, blanditiis ratione odit repellendus vitae illo animi nulla voluptatum ea vero eos dolorem eaque? Aut, cumque aliquid dolorum ratione! -->
+				</div>
+				<figure>
+					<a href="xxx"><img alt="alttext" src="https://placekitten.com/200/200" width="200" height="200" />
+						<figcaption>kitties</figcaption>
+					</a>
+				</figure>
+				<figure>
+					<a href="xxx"><img alt="alttext" src="https://placekitten.com/600/900" width="200" height="200" />
+						<figcaption>kitties</figcaption>
+					</a>
+				</figure>
+				<figure>
+					<a href="xxx"><img alt="alttext" src="https://placekitten.com/900/600" width="200" height="200" />
+						<figcaption>kitties</figcaption>
+					</a>
+				</figure>
+				<div class="jpbs2021-grid-img">1</div>
+				<div class="jpbs2021-grid-img">2</div>
+				<div class="jpbs2021-grid-img">3</div>
+				<div class="jpbs2021-grid-img">4</div>
+				<div class="jpbs2021-grid-img">5</div>
+				<div class="jpbs2021-grid-img">6</div>
+				<div class="jpbs2021-grid-img">7</div>
+				<div class="jpbs2021-grid-img">8</div>
+			</div>
+			<p>flexbox card links</p>
+			<div class="jpbs2021-flex-container">
+				<figure class="jpbs2021-flex-img">
+					<a href="xxx"><img alt="alttext" src="https://placekitten.com/150/200" width="150" height="200" />
+						<figcaption>Archimedes Thoughtful</figcaption>
+					</a>
+				</figure>
+				<div class="jpbs2021-flex-img">long content long content long content long content long content Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, earum labore laudantium quia unde, neque, maxime odit eum itaque ipsam accusamus
+					<!-- possimus alias sed reiciendis tenetur debitis consectetur numquam placeat. Numquam eius similique veritatis temporibus exercitationem, iure? Tempora et assumenda amet quae iure laudantium alias porro nulla, corporis reprehenderit facere quia blanditiis laborum fugiat in autem possimus ex quasi veritatis ratione corrupti eligendi consequatur, odit numquam? Accusantium consectetur eius at cupiditate culpa nobis quas cumque labore optio nesciunt omnis ipsam natus, blanditiis ratione odit repellendus vitae illo animi nulla voluptatum ea vero eos dolorem eaque? Aut, cumque aliquid dolorum ratione! -->
+				</div>
+				<figure>
+					<a href="xxx"><img alt="alttext" src="https://placekitten.com/200/200" width="200" height="200" />
+						<figcaption>kitties</figcaption>
+					</a>
+				</figure>
+				<figure>
+					<a href="xxx"><img alt="alttext" src="https://placekitten.com/600/900" width="200" height="200" />
+						<figcaption>kitties</figcaption>
+					</a>
+				</figure>
+				<figure>
+					<a href="xxx"><img alt="alttext" src="https://placekitten.com/900/600" width="200" height="200" />
+						<figcaption>kitties</figcaption>
+					</a>
+				</figure>
+				<div class="jpbs2021-flex-img">1</div>
+				<div class="jpbs2021-flex-img">2</div>
+				<div class="jpbs2021-flex-img">3</div>
+				<div class="jpbs2021-flex-img">4</div>
+				<div class="jpbs2021-flex-img">5</div>
+				<div class="jpbs2021-flex-img">6</div>
+				<div class="jpbs2021-flex-img">7</div>
+				<div class="jpbs2021-flex-img">8</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
